@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagen"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fondo3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="MENÚ"
+            android:textSize="50dp"
+            android:textStyle="italic"
+            android:textColor="#941DA8"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnproductos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:height="60dp"
+                android:text="Detalles"
+                android:background="@drawable/redondear_boton" />
+
+            <Button
+                android:id="@+id/btnarticulos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:height="60dp"
+                android:text="Canastas"
+                android:background="@drawable/redondear_boton"
+                app:iconPadding="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btngaleria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="60dp"
+                android:layout_margin="5dp"
+                android:text="Galeria"
+                android:background="@drawable/redondear_boton"/>
+
+            <Button
+                android:id="@+id/btnempresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="60dp"
+                android:layout_margin="5dp"
+                android:text="Empresa"
+                android:background="@drawable/redondear_boton"
+                app:iconPadding="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnmapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="60dp"
+                android:layout_margin="5dp"
+                android:text="Mapa"
+                android:background="@drawable/redondear_boton"/>
+
+            <Button
+                android:id="@+id/btnpedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="60dp"
+                android:layout_margin="5dp"
+                android:text="Pedidos"
+                android:background="@drawable/redondear_boton"
+                app:iconPadding="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/facebook" />
+            <ImageButton
+                android:id="@+id/btnWhatsapp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/whatsapp" />
+            <ImageButton
+                android:id="@+id/btnInstagram"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/instagram" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:text="DIMO-Momentos inolvidables!"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20dp"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+</ScrollView>
